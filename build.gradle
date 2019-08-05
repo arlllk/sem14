@@ -1,0 +1,30 @@
+plugins {
+    id 'eclipse'
+    id 'idea'
+    id 'java'
+    id 'application'
+    //id "cz.kubacki.nbm" version "1.17.0"
+}
+
+version = 'a0.1'
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+application {
+    mainClassName = 'UI.mainWin'
+}
+
+repositories {
+  mavenCentral() 
+}
+
+test {
+    useJUnitPlatform()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.+'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.+'
+}
+
+// --gradle-version

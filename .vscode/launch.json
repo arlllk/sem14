@@ -1,0 +1,11 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - mainWin",
+      "request": "launch",
+      "mainClass": "UI.mainWin",
+      "projectName": "sem14"
+    }
+  ]
+}
