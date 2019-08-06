@@ -5,9 +5,9 @@ import java.awt.*;
 import java.awt.event.ActionListener;
 
 abstract class selectorAbstract extends JFrame implements ActionListener {
-	JButton buttonOne = new JButton("1");
-	JButton buttonTwo = new JButton("2");
-	JButton retornarButton = new JButton("Retornar");
+	final JButton buttonOne = new JButton("1");
+	final JButton buttonTwo = new JButton("2");
+	final JButton retornarButton = new JButton("Retornar");
 
 	selectorAbstract() {
 		super("Elige");

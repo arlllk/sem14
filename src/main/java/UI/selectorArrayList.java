@@ -3,7 +3,7 @@ package UI;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class selectorArrayList extends selectorAbstract implements ActionListener {
+class selectorArrayList extends selectorAbstract implements ActionListener {
 
 	selectorArrayList() {
 		this.buttonOne.addActionListener(this);

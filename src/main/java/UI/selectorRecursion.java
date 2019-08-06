@@ -1,12 +1,12 @@
 package UI;
 
-import Recursion.winFactorizacion;
-import Recursion.winFibonacci;
+import recursion.winFactorizacion;
+import recursion.winFibonacci;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class selectorRecursion extends selectorAbstract implements ActionListener {
+class selectorRecursion extends selectorAbstract implements ActionListener {
 
 	selectorRecursion() {
 		this.buttonOne.addActionListener(this);

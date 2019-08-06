@@ -1,4 +1,4 @@
-package Recursion;
+package recursion;
 
 import javax.swing.*;
 import java.awt.*;
@@ -7,18 +7,16 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-public abstract class winAbstractRecursion extends JFrame implements ActionListener {
-	protected final int COLUMN_SIZE_OF_OUTPUT = 30;
+abstract class winAbstractRecursion extends JFrame implements ActionListener {
+	final JTextField input = new JTextField();
+	private final int COLUMN_SIZE_OF_OUTPUT = 30;
+	private final JLabel lInput = new JLabel("Ingrese un numero");
+	private final JTextArea out = new JTextArea(1, COLUMN_SIZE_OF_OUTPUT);
+	private final JButton calcular = new JButton("Calcular");
 
-	JLabel lInput = new JLabel("Ingrese un numero");
-	JTextField input = new JTextField();
+	private final JScrollPane outPane = new JScrollPane(out, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 
-	JTextArea out = new JTextArea(1, COLUMN_SIZE_OF_OUTPUT);
-	JButton calcular = new JButton("Calcular");
-
-	JScrollPane outPane = new JScrollPane(out, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
-
-	protected void setUp() {
+	void setUp() {
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setLayout(new GridBagLayout());
 		this.setMinimumSize(new Dimension(450, 220));
@@ -57,7 +55,7 @@ public abstract class winAbstractRecursion extends JFrame implements ActionListe
 		});
 	}
 
-	protected void buildUI() {
+	void buildUI() {
 		final int MARGEN_TOP = 30;
 		final int MARGEN_BOTTOM = 30;
 		final int MARGEN_LEFT = 10;
@@ -91,7 +89,7 @@ public abstract class winAbstractRecursion extends JFrame implements ActionListe
 		add(calcular, gbc);
 	}
 
-	protected void ingresarValores() {
+	private void ingresarValores() {
 		int filas = 1;
 		String resultado = calculos();
 		if(resultado.length() >= COLUMN_SIZE_OF_OUTPUT) {
@@ -108,7 +106,7 @@ public abstract class winAbstractRecursion extends JFrame implements ActionListe
 		out.setCaretPosition(0);
 	}
 
-	public abstract String calculos();
+	protected abstract String calculos();
 
 	@Override
 	public void actionPerformed(ActionEvent e) {

@@ -7,14 +7,14 @@ import java.awt.event.ActionListener;
 import java.awt.event.ComponentEvent;
 import java.awt.event.ComponentListener;
 
-public class mainWin extends JFrame implements ActionListener, ComponentListener {
+class mainWin extends JFrame implements ActionListener, ComponentListener {
 	private static final long serialVersionUID = 1L;
-	private JButton ArrayListButton = new JButton("ArrayList");
-	private JButton RecursividadButton = new JButton("Recursividad");
-	private JButton CloseButton = new JButton("SALIR");
-	private GridBagConstraints gbc = new GridBagConstraints();
-	private selectorArrayList array = new selectorArrayList();
-	private selectorRecursion recursion = new selectorRecursion();
+	private final JButton ArrayListButton = new JButton("ArrayList");
+	private final JButton RecursividadButton = new JButton("Recursividad");
+	private final JButton CloseButton = new JButton("SALIR");
+	private final GridBagConstraints gbc = new GridBagConstraints();
+	private final selectorArrayList array = new selectorArrayList();
+	private final selectorRecursion recursion = new selectorRecursion();
 
 	private int counterArray = 0;
 	private int counterRecursion = 0;

@@ -1,4 +1,4 @@
-package Recursion;
+package recursion;
 
 public class winFibonacci extends winAbstractRecursion {
 	public winFibonacci() {
