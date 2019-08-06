@@ -16,6 +16,9 @@ public class mainWin extends JFrame implements ActionListener, ComponentListener
 	private selectorArrayList array = new selectorArrayList();
 	private selectorRecursion recursion = new selectorRecursion();
 
+	private int counterArray = 0;
+	private int counterRecursion = 0;
+
 	private mainWin() {
 		super("Menu");
 		setUp();
@@ -81,11 +84,24 @@ public class mainWin extends JFrame implements ActionListener, ComponentListener
 
 	@Override
 	public void componentResized(ComponentEvent e) {
+		if(e.getSource() == this.array) {
+			counterArray++;
+			if(counterArray > 1) {
+				onClose();
+			}
+		}
+		if(e.getSource() == this.recursion) {
+			counterRecursion++;
+			if(counterRecursion > 1) {
+				onClose();
+			}
+		}
 		//onClose(); //DONT WORK :(
 	}
 
 	@Override
 	public void componentMoved(ComponentEvent e) {
+		System.out.println("Objeto movido we");
 	}
 
 	@Override

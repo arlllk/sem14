@@ -16,7 +16,6 @@ abstract class selectorAbstract extends JFrame implements ActionListener {
 	}
 
 	private void setUp() {
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setLayout(new GridBagLayout());
 		this.setAlwaysOnTop(true);
 		this.setUndecorated(true);
