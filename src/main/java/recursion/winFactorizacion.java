@@ -23,6 +23,7 @@ public class winFactorizacion extends winAbstractRecursion {
 	}
 
 	private BigInteger factorizar(BigInteger numero) {
+		cantidadDeRecursiones++;
 		if(numero.compareTo(BigInteger.valueOf(1)) == 0) {
 			return BigInteger.valueOf(1);
 		}

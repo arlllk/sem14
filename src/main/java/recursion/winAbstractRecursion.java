@@ -10,16 +10,21 @@ import java.awt.event.KeyListener;
 abstract class winAbstractRecursion extends JFrame implements ActionListener {
 	final JTextField input = new JTextField();
 	private final int COLUMN_SIZE_OF_OUTPUT = 30;
+	private final String CANTIDAD_DE_RECURSIONES = "Cantidad de Veces ejecutado: ";
 	private final JLabel lInput = new JLabel("Ingrese un numero");
 	private final JTextArea out = new JTextArea(1, COLUMN_SIZE_OF_OUTPUT);
 	private final JButton calcular = new JButton("Calcular");
+
+	private final JLabel labelCantidadRecursiones = new JLabel(CANTIDAD_DE_RECURSIONES);
+
+	long cantidadDeRecursiones;
 
 	private final JScrollPane outPane = new JScrollPane(out, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 
 	void setUp() {
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setLayout(new GridBagLayout());
-		this.setMinimumSize(new Dimension(450, 220));
+		this.setMinimumSize(new Dimension(450, 240));
 		this.setResizable(false);
 		this.setLocationRelativeTo(null);
 		this.setVisible(true);
@@ -85,11 +90,14 @@ abstract class winAbstractRecursion extends JFrame implements ActionListener {
 		gbc.fill = GridBagConstraints.HORIZONTAL;
 		gbc.weightx = 1;
 		gbc.gridy++;
-		gbc.insets = new Insets(0, MARGEN_LEFT, MARGEN_BOTTOM, MARGEN_RIGHT);
 		add(calcular, gbc);
+		gbc.insets = new Insets(0, MARGEN_LEFT, MARGEN_BOTTOM, MARGEN_RIGHT);
+		gbc.gridy++;
+		add(labelCantidadRecursiones, gbc);
 	}
 
 	private void ingresarValores() {
+		cantidadDeRecursiones = 0;
 		int filas = 1;
 		String resultado = calculos();
 		if(resultado.length() >= COLUMN_SIZE_OF_OUTPUT) {
@@ -104,6 +112,7 @@ abstract class winAbstractRecursion extends JFrame implements ActionListener {
 		input.setText("");
 		out.setText(resultado);
 		out.setCaretPosition(0);
+		labelCantidadRecursiones.setText(CANTIDAD_DE_RECURSIONES + cantidadDeRecursiones);
 	}
 
 	protected abstract String calculos();

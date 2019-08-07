@@ -17,6 +17,7 @@ public class winFibonacci extends winAbstractRecursion {
 	}
 
 	private long fibonachi(long numero) {
+		cantidadDeRecursiones++;
 		if(numero == 0)
 			return 0;
 		if(numero == 1) {
