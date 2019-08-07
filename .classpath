@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="output" path="bin/default"/>
+	<classpathentry output="bin/main" kind="src" path="src/main/java">
+		<attributes>
+			<attribute name="gradle_scope" value="main"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
+	<classpathentry sourcepath="C:/Users/arllk/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.5.1/c37d197c850a212bc5cfc4fd47a65c75eba63022/junit-jupiter-api-5.5.1-sources.jar" kind="lib" path="C:/Users/arllk/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.5.1/fc466b57ceda453119bd630c830ec68b93bba7f4/junit-jupiter-api-5.5.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/arllk/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.5.1/65bfbe4ebcddf7351870140aa75164ea3e10249f/junit-platform-commons-1.5.1-sources.jar" kind="lib" path="C:/Users/arllk/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.5.1/d94bdac345742fe1b0d993f0be51bb7146579b1b/junit-platform-commons-1.5.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/arllk/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.0/f3c15fe970af864390c8d0634c9f16aca1b064a8/apiguardian-api-1.1.0-sources.jar" kind="lib" path="C:/Users/arllk/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.0/fc9dff4bb36d627bdc553de77e1f17efd790876c/apiguardian-api-1.1.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/arllk/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/41d55b3c2254de9837b4ec8923cbd371b8a7eab5/opentest4j-1.2.0-sources.jar" kind="lib" path="C:/Users/arllk/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/28c11eb91f9b6d8e200631d46e20a7f407f2a046/opentest4j-1.2.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/arllk/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.5.1/4455e75918f8e56f766a95973d0c4797376af32c/junit-jupiter-engine-5.5.1-sources.jar" kind="lib" path="C:/Users/arllk/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.5.1/5e6fdb03ccfc853aca39704c5e97850d732df204/junit-jupiter-engine-5.5.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/arllk/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.5.1/42614557b2e0ebde4a545fc3e9954a9ea738229e/junit-platform-engine-1.5.1-sources.jar" kind="lib" path="C:/Users/arllk/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.5.1/ab7d21edb0b176698a8252374fbed4f665519cdd/junit-platform-engine-1.5.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+</classpath>
