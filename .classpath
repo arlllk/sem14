@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="output" path="bin/default"/>
 	<classpathentry output="bin/main" kind="src" path="src/main/java">
 		<attributes>
 			<attribute name="gradle_scope" value="main"/>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="output" path="bin/default"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
 	<classpathentry sourcepath="C:/Users/arllk/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.5.1/c37d197c850a212bc5cfc4fd47a65c75eba63022/junit-jupiter-api-5.5.1-sources.jar" kind="lib" path="C:/Users/arllk/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.5.1/fc466b57ceda453119bd630c830ec68b93bba7f4/junit-jupiter-api-5.5.1.jar">
 		<attributes>
